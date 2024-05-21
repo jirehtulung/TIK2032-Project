@@ -46,7 +46,7 @@
         include 'db_connect.php'; // Menyertakan file koneksi
 
         // Query untuk mengambil data dari tabel
-        $sql = "SELECT id, nama_gambar, href, teks FROM nama_tabel"; // ganti dengan nama tabel yang sesuai
+        $sql = "id, gambar, href, teks "; // ganti dengan nama tabel yang sesuai
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
